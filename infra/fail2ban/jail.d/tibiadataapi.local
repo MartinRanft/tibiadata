@@ -1,0 +1,9 @@
+[tibiadataapi-admin-abuse]
+enabled = true
+filter = tibiadataapi-nginx-limit
+port = http,https
+logpath = /var/log/nginx/access.log
+findtime = 20m
+maxretry = 8
+bantime = 1h
+action = iptables[name=tibiadataapi-admin-abuse, port=http, protocol=tcp]

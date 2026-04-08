@@ -1,0 +1,9 @@
+{{Object
+|name=Key 4501
+|actualname=key 4501
+|article=a
+|itemid=1001
+|keynumber=4501
+|doorlevel=2
+|usedfor=Kazordoon vault
+}}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5213",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Database__Provider": "MariaDb",
+        "ConnectionStrings__DatabaseConnectionDev": "Server=db.example;Port=3306;Database=tibiadataapi_dev;User=appuser;Password=change-me;charset=utf8;Allow User Variables=True;",
+        "ConnectionStrings__DatabaseConnection": "Server=db.example;Port=3306;Database=tibiadataapi;User=appuser;Password=change-me;charset=utf8;Allow User Variables=True;"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "https://localhost:7122;http://localhost:5213",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "Database__Provider": "MariaDb",
+        "ConnectionStrings__DatabaseConnectionDev": "Server=db.example;Port=3306;Database=tibiadataapi_dev;User=appuser;Password=change-me;charset=utf8;Allow User Variables=True;",
+        "ConnectionStrings__DatabaseConnection": "Server=db.example;Port=3306;Database=tibiadataapi;User=appuser;Password=change-me;charset=utf8;Allow User Variables=True;"
+      }
+    }
+  }
+}

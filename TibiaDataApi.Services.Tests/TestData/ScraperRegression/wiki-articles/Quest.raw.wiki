@@ -1,0 +1,13 @@
+{{Quest
+| name = The Desert Dungeon Quest
+| reward = 10,000 experience
+| location = Darashia
+}}
+
+The Desert Dungeon Quest grants access to several dungeons.
+
+== Requirements ==
+Players need to complete a lever puzzle.
+
+== Walkthrough ==
+Speak with [[Alesar]] and then enter [[Darashia]].

@@ -1,0 +1,11 @@
+{{Object
+|name=Runic Sigil
+|actualname=runic sigil
+|article=a
+|itemid=1001
+|element=Holy
+|requiredlevel=120
+|spellname=Divine Missile
+|manacost=80
+|usage=3
+}}

@@ -1,0 +1,9 @@
+{{Object
+|name=Jeweled Cup
+|actualname=jeweled cup
+|article=a
+|itemid=1001
+|material=gold
+|rarity=rare
+|stacksize=5
+}}

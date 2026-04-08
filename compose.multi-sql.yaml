@@ -1,0 +1,47 @@
+services:
+  tibiadataapi.validation-mariadb:
+    image: mariadb:11.4
+    environment:
+      MARIADB_DATABASE: tibiadata_validation
+      MARIADB_USER: validation
+      MARIADB_PASSWORD: ValidationPass!22
+      MARIADB_ROOT_PASSWORD: ValidationRootPass!22
+    ports:
+      - "53306:3306"
+    healthcheck:
+      test: ["CMD", "mariadb-admin", "ping", "-h", "127.0.0.1", "-u", "validation", "-pValidationPass!22"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  tibiadataapi.validation-postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: tibiadata_validation
+      POSTGRES_USER: validation
+      POSTGRES_PASSWORD: ValidationPass!22
+    ports:
+      - "55432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U validation -d tibiadata_validation"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  tibiadataapi.validation-sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: ValidationPass!22
+      MSSQL_PID: Developer
+    ports:
+      - "51433:1433"
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "/opt/mssql-tools18/bin/sqlcmd -S 127.0.0.1 -U sa -P 'ValidationPass!22' -Q 'SELECT 1' -C || exit 1"
+        ]
+      interval: 15s
+      timeout: 10s
+      retries: 20
