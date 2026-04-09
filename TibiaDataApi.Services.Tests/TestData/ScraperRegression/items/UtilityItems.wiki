@@ -1,0 +1,10 @@
+{{Object
+|name=Painter's Brush
+|actualname=painter's brush
+|article=a
+|itemid=1001
+|tooltype=painting
+|destination=gallery hall
+|paintcolor=crimson
+|volume=8
+}}

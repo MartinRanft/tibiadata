@@ -1,0 +1,43 @@
+using TibiaDataApi.Contracts.Public.WikiArticles;
+
+namespace TibiaDataApi.Contracts.Public.HuntingPlaces
+{
+    public sealed record HuntingPlaceDetailsResponse(
+        int Id,
+        string Title,
+        string? Summary,
+        string? PlainTextContent,
+        string? RawWikiText,
+        HuntingPlaceStructuredDataResponse? StructuredData,
+        string? Image,
+        string? City,
+        string? Location,
+        string? Vocation,
+        string? LevelKnights,
+        string? LevelPaladins,
+        string? LevelMages,
+        string? SkillKnights,
+        string? SkillPaladins,
+        string? SkillMages,
+        string? DefenseKnights,
+        string? DefensePaladins,
+        string? DefenseMages,
+        string? Loot,
+        string? LootStar,
+        string? Experience,
+        string? ExperienceStar,
+        string? BestLoot,
+        string? BestLoot2,
+        string? BestLoot3,
+        string? BestLoot4,
+        string? BestLoot5,
+        string? Map,
+        string? Map2,
+        string? Map3,
+        string? Map4,
+        IReadOnlyList<HuntingPlaceAreaRecommendationResponse> LowerLevels,
+        IReadOnlyList<WikiArticleCategoryResponse> Categories,
+        string? WikiUrl,
+        DateTime? LastSeenAt,
+        DateTime LastUpdated);
+}

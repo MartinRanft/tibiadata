@@ -1,0 +1,9 @@
+{{Infobox Creature
+| name = Scarab
+| hp = 320
+| exp = 120
+| loot = {{Loot Table
+ |{{Loot Item|0-52|Gold Coin|common}}
+ |{{Loot Item|Piece of Scarab Shell|semi-rare}}
+}}
+}}

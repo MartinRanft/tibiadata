@@ -1,0 +1,9 @@
+{{Object
+|name=Traveller Backpack
+|actualname=traveller backpack
+|article=a
+|itemid=1001
+|capacity=20
+|hangable=no
+|moveable=yes
+}}

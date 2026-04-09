@@ -1,0 +1,10 @@
+{{Object
+|name=Arcane Necklace
+|actualname=arcane necklace
+|article=an
+|itemid=1001
+|requiredlevel=80
+|vocationrequired=sorcerers,druids
+|duration=60 minutes
+|skills=magic level +2
+}}

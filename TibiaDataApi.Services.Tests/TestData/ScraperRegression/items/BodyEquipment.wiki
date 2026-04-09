@@ -1,0 +1,10 @@
+{{Object
+|name=Guardian Plate
+|actualname=guardian plate
+|article=a
+|itemid=1001
+|arm=15
+|slotposition=body
+|allresist=4%
+|skills=sword fighting +1
+}}

@@ -1,0 +1,9 @@
+{{Object
+|name=Festival Banner
+|actualname=festival banner
+|article=a
+|itemid=1001
+|hangable=yes
+|houseuse=display
+|eventsource=summer court
+}}

@@ -1,0 +1,10 @@
+{{Object
+|name=Hunter Bow
+|actualname=hunter bow
+|article=a
+|itemid=1001
+|distanceattack=30
+|shootrange=6
+|ammotype=arrow
+|hitchance=4%
+}}
