@@ -1,0 +1,11 @@
+{{Object
+|name=Battle Axe
+|actualname=battle axe
+|article=a
+|itemid=1001
+|meleeattack=52
+|weapondefense=31
+|defmod=2
+|twohanded=yes
+|elementalbonus=earth +5%
+}}

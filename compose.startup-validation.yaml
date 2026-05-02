@@ -1,0 +1,33 @@
+services:
+  tibiadataapi.startup-mariadb:
+    image: mariadb:11.4
+    environment:
+      MARIADB_DATABASE: tibiadata_startup
+      MARIADB_USER: startup
+      MARIADB_PASSWORD: StartupPass!22
+      MARIADB_ROOT_PASSWORD: StartupRootPass!22
+    ports:
+      - "63306:3306"
+    healthcheck:
+      test: ["CMD", "mariadb-admin", "ping", "-h", "127.0.0.1", "-u", "startup", "-pStartupPass!22"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+
+  tibiadataapi.startup-sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: StartupPass!22
+      MSSQL_PID: Developer
+    ports:
+      - "61433:1433"
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "/opt/mssql-tools18/bin/sqlcmd -S 127.0.0.1 -U sa -P 'StartupPass!22' -Q 'SELECT 1' -C || exit 1"
+        ]
+      interval: 15s
+      timeout: 10s
+      retries: 20

@@ -1,0 +1,11 @@
+{{Object
+|name=Arcane Wand
+|actualname=arcane wand
+|article=an
+|itemid=1001
+|wandattack=38
+|element=Energy
+|manacost=18
+|charges=120
+|cooldown=2s
+}}

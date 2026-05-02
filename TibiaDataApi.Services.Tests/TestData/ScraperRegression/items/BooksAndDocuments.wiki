@@ -1,0 +1,10 @@
+{{Object
+|name=Explorer's Notes
+|actualname=explorer's notes
+|article=
+|itemid=1001
+|booktext=The path north is dangerous.
+|author=Archivist
+|pagecount=4
+|foundat=ancient library
+}}

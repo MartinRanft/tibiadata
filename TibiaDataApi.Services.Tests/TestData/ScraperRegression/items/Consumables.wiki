@@ -1,0 +1,10 @@
+{{Object
+|name=Blessed Cake
+|actualname=blessed cake
+|article=a
+|itemid=1001
+|marketvalue=150
+|nutrition=9
+|heal=250
+|fluidtype=sweet
+}}

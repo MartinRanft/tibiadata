@@ -1,0 +1,10 @@
+{{Object
+|name=Sun Lantern
+|actualname=sun lantern
+|article=a
+|itemid=1001
+|lightradius=6
+|lightcolor=215
+|burntime=30 minutes
+|charges=100
+}}

@@ -1,0 +1,10 @@
+{{Object
+|name=Crystalline Arrow
+|actualname=crystalline arrow
+|article=an
+|itemid=1001
+|ammoattack=52
+|element=Ice
+|requiredweapon=bow
+|breakchance=8%
+}}

@@ -1,0 +1,9 @@
+{{Object
+|name=Old Boot
+|actualname=old boot
+|article=an
+|itemid=1001
+|movable=yes
+|usage=collector curiosity
+|flavor_text=Still smells like swamp.
+}}
